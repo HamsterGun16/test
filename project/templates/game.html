@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <title>HUNT_SESSION</title>
+</head>
+<body>
+    <div id="game-container">
+        <video id="webcam" style="display:none;"></video>
+        <canvas id="output_canvas" width="640" height="480"></canvas>
+
+        <div id="ui-layer">
+            <div style="color: #00f2ff; font-size: 20px;">SCORE: <span id="score">0</span></div>
+            <div style="color: #444; font-size: 12px; margin-top: 5px;">STATUS: ACTIVE</div>
+        </div>
+
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="/" class="btn" style="font-size: 12px; padding: 5px 15px;">ABORT_SESSION</a>
+        </div>
+    </div>
+
+    <script src="/static/js/game.js"></script>
+</body>
+</html>

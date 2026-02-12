@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.auth-container, .hero, #ui-layer {
+    background-color: #000000;
+    border: 1px solid #00f2ff;
+    box-shadow: 0 0 8px #00f2ff;
+    padding: 30px;
+    border-radius: 2px;
+}
+
+input {
+    background: #0a0a0a;
+    border: 1px solid #00f2ff;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    width: 250px;
+    display: block;
+}
+
+.btn {
+    background: #000;
+    color: #00f2ff;
+    border: 1px solid #00f2ff;
+    padding: 10px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #00f2ff;
+    color: #000;
+}
+
+#game-container {
+    position: relative;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    pointer-events: none;
+}
